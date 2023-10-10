@@ -104,14 +104,6 @@ python-bidi
 python-dateutil
 python-json-logger
 python-version
-pytz
-
-pywin32
-pywinpty
-PyYAML
-pyzmq
-qrcode
-reportlab
 requests
 requests-oauthlib
 rfc3986-validator
