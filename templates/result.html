@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation Recognition Result</title>
+    <style>
+        /* Center the content horizontally and vertically */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style for the main container */
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #f8f8f8;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style for the headings */
+        h1, h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Style for the paragraph elements */
+        p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /* Style for the result text */
+        .result {
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Equation Recognition Result</h1>
+        <h2>Equation:</h2>
+        <p>{{ equation }}</p>
+        <h2>Result:</h2>
+        {% if result is not none %}
+        <p class="result">{{ result }}</p>
+        {% else %}
+        <p class="result" style="color: red;">Invalid Equation</p>
+        {% endif %}
+    </div>
+</body>
+</html>

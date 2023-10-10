@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation Recognition</title>
+    <style>
+        /* Center the content horizontally and vertically */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style for the h1 element */
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Style for the form element */
+        form {
+            text-align: center;
+        }
+
+        /* Style for the input elements */
+        input[type="file"] {
+            font-size: 18px;
+            padding: 10px;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #fdfdfd;
+            color: #070707;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f87d0a;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Equation Recognition</h1>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*">
+        <br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
