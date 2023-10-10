@@ -105,7 +105,7 @@ python-dateutil
 python-json-logger
 python-version
 pytz
-pytz-deprecation-shim
+
 pywin32
 pywinpty
 PyYAML
