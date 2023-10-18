@@ -148,7 +148,7 @@ def predict():
 
         try:
             result = eval(equation)
-            return render_template('result.html', equation=equation, result=result, error_message=None)
+            return render_template('index.html', equation=equation, result=result, error_message=None)
         except Exception as e:
             error_message = "Invalid Equation"
         return render_template('index.html', equation=equation, result=None, error_message=error_message)
